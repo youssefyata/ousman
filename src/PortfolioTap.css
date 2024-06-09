@@ -1,0 +1,20 @@
+/* PortfolioTap.css */
+.modal-header {
+    display: flex;
+    justify-content: flex-end;
+    /* background-color: #faf4f4; */
+    padding: 10px;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #b91d1d;
+    cursor: pointer;
+  }
+  
+  .close-button:focus {
+    outline: none;
+  }
+  
