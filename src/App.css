@@ -13,7 +13,18 @@
   width: 100%;
   height: 100%;
   position: relative;
+  animation: moveBackground 20s linear infinite alternate; /* Adjust duration and timing function as needed */
 }
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
 
 .center-content {
   position: absolute;

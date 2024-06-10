@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './PortfolioTap.css'; // Ensure you create and style this CSS file
+import { Link } from 'react-router-dom';
 
 function PortfolioTap() {
   const conceptRef = useRef(null);
@@ -57,11 +58,14 @@ function PortfolioTap() {
   return (
     <div>
       <div style={{ position: 'relative' }}>
-        <img src='/images/covergraphicdesign.png' alt='Conception Graphique' style={{ cursor: "pointer" }} onClick={handleClick} />
+
+       <Link to="/graphique">
+       <img src='/images/covergraphicdesign.png' alt='Conception Graphique' style={{ cursor: "pointer" }} />
         <div style={{ position: 'absolute', top: '75%', left: '25%', transform: 'translate(-50%, -50%)', color: 'white', textAlign: 'left' }}>
           <h2 style={{ marginBottom: "-20px" }}>CONCEPTION GRAPHIQUE</h2>
           <p>Cette partie présente mon travail dans le domaine de <br />la conception graphique. Je vous remercie de votre intérêt.</p>
         </div>
+        </Link> 
       </div>
       <div style={{ position: 'relative' }}>
         <img src='/images/coverphotographie.png' alt='Conception Graphique' style={{ cursor: "pointer" }} onClick={handleClick2} />
